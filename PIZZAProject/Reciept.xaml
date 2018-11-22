@@ -1,0 +1,29 @@
+﻿<Window x:Class="PIZZAProject.Reciept"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PIZZAProject"
+        mc:Ignorable="d"
+        Title="Reciept" Height="450" Width="800">
+    <Grid>
+        <Label Content="Littlehome Pizza" HorizontalAlignment="Left" Margin="277,29,0,0" VerticalAlignment="Top" Width="236" Height="43" FontFamily="Showcard Gothic" FontSize="24" Foreground="#FF902F22"/>
+        <Label x:Name="UserN1" Content="" HorizontalAlignment="Left" Margin="580,8,0,0" VerticalAlignment="Top" Width="198" Height="37" FontSize="14" Background="#FFF3BA6D" FontFamily="Segoe UI Semibold" FontWeight="Bold" Foreground="#FF902F22"/>
+        <Label Content="Final Reciept" HorizontalAlignment="Left" Margin="311,90,0,0" VerticalAlignment="Top" Width="181" FontWeight="Bold" FontSize="20" FontFamily="Snap ITC"/>
+        <Grid HorizontalAlignment="Left" Height="212" Margin="177,128,0,0" VerticalAlignment="Top" Width="437" Background="#FFF2970B">
+            <Label x:Name="TotalB" Content="Total Before Tax" HorizontalAlignment="Left" Margin="66,53,0,0" VerticalAlignment="Top" Width="151" FontWeight="Bold" FontSize="18" FontFamily="Urdu Typesetting" Height="51"/>
+            <Label x:Name="totalb" HorizontalAlignment="Left" Margin="217,53,0,0" VerticalAlignment="Top" Width="89" Height="40" Background="#FFFCEDED" FontSize="18"/>
+            <Label x:Name="TotalB_Copy" Content="HST 13%" HorizontalAlignment="Left" Margin="99,104,0,0" VerticalAlignment="Top" Width="87" FontWeight="Bold" FontSize="18" FontFamily="Urdu Typesetting" Height="45"/>
+            <Label x:Name="HstTx" HorizontalAlignment="Left" Margin="217,106,0,0" VerticalAlignment="Top" Width="89" Height="40" Background="#FFFCEDED" FontSize="18"/>
+            <Label x:Name="TotalB_Copy1" Content="Total After Tax" HorizontalAlignment="Left" Margin="74,154,0,0" VerticalAlignment="Top" Width="125" FontWeight="Bold" FontSize="18" FontFamily="Urdu Typesetting" Height="47"/>
+            <Label x:Name="totalAftTx" HorizontalAlignment="Left" Margin="217,157,0,0" VerticalAlignment="Top" Width="89" Height="40" Background="#FFFCEDED" FontSize="18"/>
+            <Label Content="$" HorizontalAlignment="Left" Margin="311,55,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" FontFamily="Segoe UI Black"/>
+            <Label Content="$" HorizontalAlignment="Left" Margin="311,108,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" FontFamily="Segoe UI Black"/>
+            <Label Content="$" HorizontalAlignment="Left" Margin="311,160,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" FontFamily="Segoe UI Black"/>
+        </Grid>
+        <Image HorizontalAlignment="Left" Height="98" Margin="163,25,0,0" VerticalAlignment="Top" Width="109" Source="https://bluewestproperties.com/wp-content/uploads/2015/12/pizza.jpg"/>
+        <Button x:Name="neworder" Content="New Order" HorizontalAlignment="Left" Margin="538,364,0,0" VerticalAlignment="Top" Width="102" Height="36" FontWeight="Bold" FontFamily="Segoe UI Black" FontSize="16" Click="Neworder_Click"/>
+        <Button x:Name="exit" Content="Exit" HorizontalAlignment="Left" Margin="657,364,0,0" VerticalAlignment="Top" Width="102" Height="36" FontSize="16" FontWeight="Bold" FontFamily="Segoe UI Black" Click="Exit_Click"/>
+
+    </Grid>
+</Window>

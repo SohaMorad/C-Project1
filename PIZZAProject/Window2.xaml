@@ -1,0 +1,53 @@
+﻿<Window x:Class="PIZZAProject.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PIZZAProject"
+        mc:Ignorable="d"
+        Title="Window2" Height="495.333" Width="800">
+    <Grid Margin="0,0,3.333,-1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="131*"/>
+            <ColumnDefinition Width="591*"/>
+            <ColumnDefinition Width="71*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Littlehome Pizza" HorizontalAlignment="Left" Margin="134.667,33,0,0" VerticalAlignment="Top" Width="236" Height="43" FontFamily="Showcard Gothic" FontSize="24" Foreground="#FF902F22" Grid.Column="1"/>
+        <Label x:Name="UserN" Content="" HorizontalAlignment="Left" Margin="445.667,34,0,0" VerticalAlignment="Top" Width="198" Height="37" FontSize="14" Background="#FFF3BA6D" FontFamily="Segoe UI Semibold" FontWeight="Bold" Foreground="#FF902F22" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="46" Margin="22,29,0,0" VerticalAlignment="Top" Width="76" Source="https://bluewestproperties.com/wp-content/uploads/2015/12/pizza.jpg"/>
+        <Grid HorizontalAlignment="Left" Height="42" Margin="0,80,0,0" VerticalAlignment="Top" Width="793" Background="#FFE88443" Grid.ColumnSpan="3">
+            <Label x:Name="size" Content="Size" HorizontalAlignment="Left" Margin="38,4,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.702,0.324" Width="52" FontFamily="Showcard Gothic" Foreground="#FFAE2323" FontSize="20"/>
+            <Label x:Name="fiveD" Content="(5$ )" HorizontalAlignment="Left" Margin="284,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label x:Name="fiveD_Copy" Content="(8$)" HorizontalAlignment="Left" Margin="482,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label x:Name="fiveD_Copy1" Content="(10$)" HorizontalAlignment="Left" Margin="686,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        </Grid>
+        <RadioButton x:Name="small" Content="SMALL" HorizontalAlignment="Left" Margin="64.667,89,0,0" VerticalAlignment="Top" Foreground="#FF258A1F" FontWeight="Bold" FontSize="20" Grid.Column="1" Checked="Small_Checked"/>
+        <RadioButton x:Name="medium" Content="MEDIUM" HorizontalAlignment="Left" Margin="248.667,87,0,0" VerticalAlignment="Top" Foreground="#FF258A1F" FontSize="20" FontWeight="Bold" Grid.Column="1" Checked="Medium_Checked"/>
+        <RadioButton x:Name="large" Content="LARGE" HorizontalAlignment="Left" Margin="468.667,88,0,0" VerticalAlignment="Top" Foreground="#FF258A1F" FontSize="20" FontWeight="Bold" Grid.Column="1" Checked="Large_Checked"/>
+        <Grid HorizontalAlignment="Left" Height="41" Margin="0,136,0,0" VerticalAlignment="Top" Width="793" Background="#FFE88443" Grid.ColumnSpan="3">
+            <Label Content="Crust" HorizontalAlignment="Left" Margin="26,4,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" FontSize="20" Foreground="#FFBE3324"/>
+            <CheckBox x:Name="thin" Content="THIN" HorizontalAlignment="Left" Margin="203,6,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontSize="20" FontWeight="Bold" Checked="Thin_Checked"/>
+            <CheckBox x:Name="pan" Content="PAAN" HorizontalAlignment="Left" Margin="548,11,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontSize="20" FontWeight="Bold" Checked="Pan_Checked"/>
+            <CheckBox x:Name="thick" Content="THICK" HorizontalAlignment="Left" Margin="377,10,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontSize="20" FontWeight="Bold"/>
+            <Label Content="extra 2$" HorizontalAlignment="Left" Margin="627,14,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="198" Margin="0,190,-3,0" VerticalAlignment="Top" Width="793" Background="#FFE88443" Grid.ColumnSpan="3">
+            <Label Content="TOPPING" HorizontalAlignment="Left" Margin="18,8,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Showcard Gothic" FontSize="20" Foreground="#FFBE3324"/>
+            <CheckBox x:Name="GreenOlive" Content="Green Olive" HorizontalAlignment="Left" Margin="29,48,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontWeight="Bold" FontSize="18" Checked="GreenOlive_Checked" Unchecked="GreenOlive_Checked"/>
+            <CheckBox x:Name="BlackOlive" Content="Black Olive" HorizontalAlignment="Left" Margin="29,81,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontWeight="Bold" FontSize="18" Checked="BlackOlive_Checked" Unchecked="BlackOlive_Checked"/>
+            <CheckBox x:Name="SGPepper" Content="Sweet Green Pepper" HorizontalAlignment="Left" Margin="29,115,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontWeight="Bold" FontSize="18" Checked="SGPepper_Checked" Unchecked="SGPepper_Checked"/>
+            <CheckBox x:Name="SRPepper" Content="Sweet Red Pepper" HorizontalAlignment="Left" Margin="29,147,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontWeight="Bold" FontSize="18" Checked="SRPepper_Checked" Unchecked="SRPepper_Checked"/>
+            <CheckBox x:Name="mashroom" Content="Mashroom" HorizontalAlignment="Left" Margin="280,50,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontWeight="Bold" FontSize="18" Checked="Mashroom_Checked" Unchecked="Mashroom_Checked"/>
+            <CheckBox x:Name="RedOnion" Content="Red Onion" HorizontalAlignment="Left" Margin="280,81,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontWeight="Bold" FontSize="18" Checked="RedOnion_Checked" Unchecked= "RedOnion_Checked"/>
+            <CheckBox x:Name="pepproni" Content="Pepproni" HorizontalAlignment="Left" Margin="280,111,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontWeight="Bold" FontSize="18" Checked="Pepproni_Checked" Unchecked="Pepproni_Checked"/>
+            <CheckBox x:Name="tomato" Content="Tomatto" HorizontalAlignment="Left" Margin="281,144,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontWeight="Bold" FontSize="18" Checked="Tomato_Checked" Unchecked="Tomato_Checked"/>
+            <CheckBox x:Name="hotP" Content="Hot Pepper" HorizontalAlignment="Left" Margin="458,49,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontWeight="Bold" FontSize="18" Checked="HotP_Checked" Unchecked="HotP_Checked"/>
+            <Label Content="(more than 3 topp add 1$ each)" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        </Grid>
+        <Button x:Name="checkout" Content="Check Out" HorizontalAlignment="Left" Margin="50,403,0,0" VerticalAlignment="Top" Width="139" Height="39" FontFamily="Segoe UI Black" FontSize="22" Grid.ColumnSpan="2" Click="Checkout_Click"/>
+        <Label x:Name="totall" Content="TOTAL" Grid.Column="1" HorizontalAlignment="Left" Margin="475.333,411,0,0" VerticalAlignment="Top" Width="81" Height="39" FontFamily="Segoe UI Black" FontSize="20"/>
+        <Label x:Name="total" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="556.333,410,0,0" VerticalAlignment="Top" Width="87" Height="40" FontSize="20" FontFamily="Segoe UI Black" Background="#FFE88443" Grid.ColumnSpan="2"/>
+        <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" Margin="97.333,402,0,0" VerticalAlignment="Top" Width="139" Height="40" FontFamily="Segoe UI Black" FontSize="22" Grid.Column="1" Click="Clear_Click"/>
+
+    </Grid>
+</Window>
