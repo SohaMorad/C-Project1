@@ -36,13 +36,22 @@ namespace PIZZAProject
 
             private void Button_Click(object sender, RoutedEventArgs e)
             {
+                                
+
 
                     Name = userName.Text;
+            if (Name == "")
+            {
+                MessageBox.Show("Enter user Name");
+            }
 
+            else
+            {
 
                 Window2 win2 = new Window2();
                 win2.Show();
                 this.Hide();
+            }
 
             }
 
