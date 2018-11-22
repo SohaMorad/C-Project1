@@ -20,10 +20,11 @@ namespace PIZZAProject
     public partial class Window2 : Window
     {
         float sizeprice = 0;
-        public int pann = 2;
+
+        public int pann=0 ;
         public int count;
         public float addon=0;
-        public static float totaal;
+        public static float totaal=0;
        
 
 
@@ -96,8 +97,8 @@ namespace PIZZAProject
                 
                 sizeprice = 8;
 
-                total.Content = sizeprice.ToString() + "$";
-                totaal = sizeprice;
+                total.Content = (sizeprice + addon + pann).ToString() + "$";
+                totaal = sizeprice + addon + pann;
             }
            
         }
@@ -107,8 +108,9 @@ namespace PIZZAProject
             if (large.IsChecked == true)
             {
                 sizeprice = 12;
-                total.Content = sizeprice.ToString() + "$";
-                totaal = sizeprice;
+                
+                total.Content = (sizeprice + addon + pann).ToString() + "$";
+                totaal = sizeprice + addon + pann;
 
             }
            
@@ -119,28 +121,38 @@ namespace PIZZAProject
             if (small.IsChecked == true)
             {
                 sizeprice = 5;
-                total.Content = sizeprice.ToString() + "$";
-                totaal = sizeprice;
+                total.Content = (sizeprice + addon + pann).ToString() + "$";
+                totaal = sizeprice + addon + pann;
             }
            
         }
 
         private void Thin_Checked(object sender, RoutedEventArgs e)
         {
-           
+            if (thin.IsChecked==true)
+            {
+                pann = 0;
+                total.Content = (sizeprice + addon + pann).ToString() + "$";
+                totaal = sizeprice + addon + pann;
+            }
         }
 
         private void Pan_Checked(object sender, RoutedEventArgs e)
         {
-             if ( pan.IsChecked == true && thin.IsChecked==false  && thick.IsChecked==false)
+             if ( pan.IsChecked == true )
+
             {
-                total.Content = (sizeprice + pann).ToString() + "$";
-                totaal = sizeprice + pann;
+                pann = 2;
+                total.Content = (sizeprice + addon + pann).ToString() + "$";
+                totaal = sizeprice + addon + pann;
             }
             else
             {
                 pann = 0;
+                totaal = totaal - 2;
+                total.Content = (sizeprice + addon + pann).ToString() + "$";
             }
+            
         }
 
         private void Clear_Click(object sender, RoutedEventArgs e)
@@ -297,6 +309,17 @@ namespace PIZZAProject
             R.Show();
             this.Hide();
 
+        }
+
+        private void Thick_Checked(object sender, RoutedEventArgs e)
+        {
+            if (thick.IsChecked==true)
+            {
+                pann = 0;
+                total.Content =
+                total.Content = (sizeprice + addon + pann).ToString() + "$";
+                totaal = sizeprice + addon + pann;
+            }
         }
     }
 }

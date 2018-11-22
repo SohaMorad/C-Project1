@@ -19,7 +19,7 @@
             <Label x:Name="size" Content="Size" HorizontalAlignment="Left" Margin="38,4,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.702,0.324" Width="52" FontFamily="Showcard Gothic" Foreground="#FFAE2323" FontSize="20"/>
             <Label x:Name="fiveD" Content="(5$ )" HorizontalAlignment="Left" Margin="284,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
             <Label x:Name="fiveD_Copy" Content="(8$)" HorizontalAlignment="Left" Margin="482,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-            <Label x:Name="fiveD_Copy1" Content="(10$)" HorizontalAlignment="Left" Margin="686,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label x:Name="fiveD_Copy1" Content="(12$)" HorizontalAlignment="Left" Margin="686,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         </Grid>
         <RadioButton x:Name="small" Content="SMALL" HorizontalAlignment="Left" Margin="64.667,89,0,0" VerticalAlignment="Top" Foreground="#FF258A1F" FontWeight="Bold" FontSize="20" Grid.Column="1" Checked="Small_Checked"/>
         <RadioButton x:Name="medium" Content="MEDIUM" HorizontalAlignment="Left" Margin="248.667,87,0,0" VerticalAlignment="Top" Foreground="#FF258A1F" FontSize="20" FontWeight="Bold" Grid.Column="1" Checked="Medium_Checked"/>
@@ -27,8 +27,8 @@
         <Grid HorizontalAlignment="Left" Height="41" Margin="0,136,0,0" VerticalAlignment="Top" Width="793" Background="#FFE88443" Grid.ColumnSpan="3">
             <Label Content="Crust" HorizontalAlignment="Left" Margin="26,4,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" FontSize="20" Foreground="#FFBE3324"/>
             <CheckBox x:Name="thin" Content="THIN" HorizontalAlignment="Left" Margin="203,6,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontSize="20" FontWeight="Bold" Checked="Thin_Checked"/>
-            <CheckBox x:Name="pan" Content="PAAN" HorizontalAlignment="Left" Margin="548,11,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontSize="20" FontWeight="Bold" Checked="Pan_Checked"/>
-            <CheckBox x:Name="thick" Content="THICK" HorizontalAlignment="Left" Margin="377,10,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontSize="20" FontWeight="Bold"/>
+            <CheckBox x:Name="pan" Content="PAAN" HorizontalAlignment="Left" Margin="548,11,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontSize="20" FontWeight="Bold" Checked="Pan_Checked" Unchecked="Pan_Checked"/>
+            <CheckBox x:Name="thick" Content="THICK" HorizontalAlignment="Left" Margin="377,10,0,0" VerticalAlignment="Top" Foreground="#FF258A21" FontSize="20" FontWeight="Bold" Checked="Thick_Checked"/>
             <Label Content="extra 2$" HorizontalAlignment="Left" Margin="627,14,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="198" Margin="0,190,-3,0" VerticalAlignment="Top" Width="793" Background="#FFE88443" Grid.ColumnSpan="3">
